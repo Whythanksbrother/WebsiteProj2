@@ -1,0 +1,179 @@
+/* viewport for the desktop*/
+header, body, nav, main, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.city{
+    display: block;
+    padding-top: 100px;
+    padding-left: 65px;
+    width: 750px;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.topcenter{
+    text-align: center;
+}
+.Neura{
+    width: 750px;
+    height:auto;
+}
+.chipmain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.mainAR{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.AR{
+    width: 750px;
+    height:auto; 
+}
+.super{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5pt solid rgba(14, 83, 25, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.mainColumn{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+        width: 750px;
+        height: auto;
+
+}
+.table{
+    border: 5pt solid rgba(14, 83, 25, 0.5);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+tr:nth-child(even){
+    background-color: #14923e;
+}
+.Print{
+    width: 650px;
+    height:auto; 
+}
+header{
+    text-align: center;
+    padding: 10px;
+    background-color: #009933;
+    font-family: "Agdasima", sans-serif;
+    font-size: .85cm;
+
+}
+header h1 {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+header h3{
+    font-size: .75cm;
+}
+
+body{
+    background: linear-gradient(to right, #339966, #009933, #339966)
+}
+
+nav{
+    background-color: #006622;
+    opacity: 80%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav li{
+    font-size: .75cm;
+    margin: 0 15px;
+}
+nav ul li { 
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover {
+    color: grey;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #006622
+}
+@media only screen and (max-width:500px) {
+    nav ul li { 
+        display: block;
+    }
+    .super{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5pt solid rgba(14, 83, 25, 0.5);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        max-width: 400px;
+    }
+    .mainColumn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+        width: 100%;
+        /* grid-template-rows: auto auto;
+        grid-gap: 20px;
+        width: 750px;
+        height: auto; */
+        }
+       .super, .city, .Print{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin:20px auto;
+        }
+        #latest h3 {
+            text-align: center;
+            padding: 0 10px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        figure{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .city{
+            padding-left: 0;
+            padding-top: 50px
+        }
+        .Neura{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .AR{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+
+
+}
